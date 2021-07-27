@@ -1,0 +1,47 @@
+.cs-container-main a:link, a:visited {
+    text-decoration: none !important;
+    cursor: default !important;
+  }
+
+  .cs-container-main a {
+      color: black;
+  }
+
+.cs-container {
+    border: 1px solid black;
+    border-radius: .3em;
+}
+
+.cs-container-active {
+    border: 1px solid black !important;
+}
+
+.cs-container-active:hover {
+    cursor: pointer;
+}
+
+.cs-container-active:hover p {
+    transition: 0s color;
+}
+
+.cs-container-active:hover > p {
+    color: goldenrod;
+    transition-duration: 500ms;
+}
+
+.cs-container p {
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.cs-container-img {
+    margin: .2em;
+    padding: .2em;
+    border: 1px solid black;
+    border-radius: .3em;
+}
+
+.cs-container-img img {
+    width: 100%;
+}

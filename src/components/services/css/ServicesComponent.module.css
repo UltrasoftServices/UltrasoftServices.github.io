@@ -1,0 +1,30 @@
+.cs-container {
+    background-color: #ededed;
+}
+
+.cs-container hr {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.cs-container-service {
+    background-color: white;
+    padding: 0;
+}
+
+.cs-container-img {
+    padding: 0 !important;
+}
+
+.cs-header {
+    text-align: center;
+}
+
+.cs-header h3 {
+    margin-top: 1em;
+    margin-bottom: .85em;
+}
+
+.cs-img {
+    width: 100%;
+}

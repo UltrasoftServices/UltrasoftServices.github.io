@@ -1,0 +1,8 @@
+.cs-container {
+    display: flex;
+    align-items: center;
+}
+
+.cs-container h1 {
+    font-size: 2.75em;
+}

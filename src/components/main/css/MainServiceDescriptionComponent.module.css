@@ -1,0 +1,17 @@
+.cs-container {
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+.cs-container h1 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.cs-container button {
+    font-weight: bold;
+}

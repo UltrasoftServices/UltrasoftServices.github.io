@@ -1,0 +1,26 @@
+.cs-container {
+    min-height: 20em;
+    background-image: url("../../../imgs/header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.cs-container h1, .cs-container p {
+    text-align: center;
+    color: white;
+}
+
+.cs-container h1 {
+    font-weight: bold;
+    color: #fff;
+}
+
+.cs-container p {
+    font-size: 1.25em;
+}
+
+.cs-container button {
+    border-radius: .5em;
+}
