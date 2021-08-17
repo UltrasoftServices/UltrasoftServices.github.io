@@ -10,7 +10,6 @@
 
 # production
 /build
-/src/res/*key*.ts
 
 # misc
 .DS_Store
