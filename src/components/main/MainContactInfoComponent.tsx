@@ -22,11 +22,14 @@ function MainContactInfoComponent() {
                 <div className="container align-self-center">
                     <h2>Contacts</h2>
                     <p>
-                        <b>Phone</b>: +1-234-567-890a<br />
-                        <b>Email</b>: info@ultrasoft.com
+                        E-Commerce Park<br/>
+                        Heelsumstraat 51<br />
+                        Willemstad<br/>
+                        Curaçao<br/>
+                        <b>Email</b>: info@ultrasoftnv.com
                     </p>
                     <p>
-                        Curacao?<br />All rights reserved
+                        All rights reserved
                     </p>
                 </div>
             </div>
