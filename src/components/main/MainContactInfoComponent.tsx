@@ -5,8 +5,8 @@ import classes from "./css/MainContactInfoComponent.module.css"
 
 const defaultProps = {
     center: {
-        lat: 54.148821,
-        lng: -4.483728
+        lat: 12.096830,
+        lng: -68.907749
     },
     zoom: 17
 };
