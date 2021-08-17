@@ -36,11 +36,17 @@
 }
 
 .favico {
-  height: 35px !important;
+  height: 30px !important;
+  margin-left: 1.25em;
+  margin-right: 1.5em;
 }
 
 .navbar {
   height: 60px !important;
+}
+
+.nav-item {
+  margin: 0 0.5em;
 }
 
 .cs-container-block {

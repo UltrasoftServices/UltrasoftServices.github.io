@@ -5,8 +5,8 @@ import classes from "./css/MainContactInfoComponent.module.css"
 
 const defaultProps = {
     center: {
-        lat: 54.148821,
-        lng: -4.483728
+        lat: 12.096830,
+        lng: -68.907749
     },
     zoom: 17
 };
@@ -22,11 +22,14 @@ function MainContactInfoComponent() {
                 <div className="container align-self-center">
                     <h2>Contacts</h2>
                     <p>
-                        <b>Phone</b>: +1-234-567-890a<br />
-                        <b>Email</b>: info@ultrasoft.com
+                        E-Commerce Park<br/>
+                        Heelsumstraat 51<br />
+                        Willemstad<br/>
+                        Curaçao<br/>
+                        <b>Email</b>: info@ultrasoftnv.com
                     </p>
                     <p>
-                        Curacao?<br />All rights reserved
+                        All rights reserved
                     </p>
                 </div>
             </div>
