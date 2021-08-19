@@ -39,10 +39,6 @@ export class SubmitButton {
 		this.publishIsLoading(this.mIsLoading)
 	}
 
-	public isLoadingChanged(): Observable<boolean> {
-		return this.mIsLoadingSubject
-	}
-
 	public get isLoading(): boolean {
 		return this.mIsLoading
 	}
@@ -52,6 +48,10 @@ export class SubmitButton {
 			this.mIsLoading = value
 			this.publishIsLoading(value)
 		}
+	}
+
+	public isLoadingChanged(): Observable<boolean> {
+		return this.mIsLoadingSubject
 	}
 
 	private publishIsLoading(value: boolean) {

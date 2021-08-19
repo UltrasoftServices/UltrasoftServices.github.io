@@ -1,3 +1,4 @@
+import FormAlertComponent, { FormAlert } from "components/core/FormAlertComponent";
 import SubmitButtonComponent, { SubmitButton } from "components/core/SubmitButtonComponent";
 import { useCallback, useMemo, useState } from "react";
 import EmailService from "services/EmailService";
@@ -11,6 +12,7 @@ function MainFeedbackComponent({ className }: params) {
 
 	let containerClassName = `container cs-container-min ${classes['cs-container']}`
 
+	const alert = useMemo(() => new FormAlert(), [])
 	const submitButton = useMemo(() => new SubmitButton("Send inquiry!", "Sending...", "mt-4"), [])
 	const emailService = useMemo(() => container.resolve(EmailService), [])
 
@@ -20,6 +22,7 @@ function MainFeedbackComponent({ className }: params) {
 
 	const onSubmit = useCallback(async e => {
 		e.preventDefault();
+		alert.value = undefined
 
 		try {
 			if (email && name && inquiry) {
@@ -39,6 +42,8 @@ function MainFeedbackComponent({ className }: params) {
 			<div>
 				<h1>We would love to hear from you!</h1>
 				<p>If you have any questions, please fill in the form below and we will reply to you within 24 hours!</p>
+
+				<FormAlertComponent alert={alert} />
 
 				<form onSubmit={onSubmit}>
 					<div className="row">
