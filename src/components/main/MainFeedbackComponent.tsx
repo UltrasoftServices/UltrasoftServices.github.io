@@ -1,5 +1,5 @@
 import SubmitButtonComponent, { SubmitButton } from "components/core/SubmitButtonComponent";
-import { useCallback, useState } from "react";
+import { useCallback, useMemo, useState } from "react";
 import classes from "./css/MainFeedbackComponent.module.css";
 
 function MainFeedbackComponent({ className }: params) {
@@ -8,22 +8,29 @@ function MainFeedbackComponent({ className }: params) {
     const [inquiry, setInquiry] = useState("")
 
     let containerClassName = `container cs-container-min ${classes['cs-container']}`
-    const submitButton = new SubmitButton("Send inquiry!", "Sending...", "mt-4")
+    const submitButton = useMemo(() => new SubmitButton("Send inquiry!", "Sending...", "mt-4"), [])
 
     if (className) {
         containerClassName += ` ${className}`
     }
 
-    const onSubmit = useCallback(e => {
+    const onSubmit = useCallback(async e => {
         e.preventDefault();
 
-        if (email && name && inquiry) {
-            const adjustedInquiry = `Hi Martijn,\r\nMy name is ${name}.\r\n\r\n${inquiry}\r\n\r\nKind regards,\r\n${name}`
-            const linkInquiry = encodeURIComponent(adjustedInquiry)
-            const mailToLink = `mailto:Martijn@ultrasoft.com?subject=Inquiry&body=${linkInquiry}`
-            window.location.href = mailToLink
-        }
-    }, [email, name, inquiry])
+        try {
+			if (email && name && inquiry) {
+				submitButton.isLoading = true
+				
+				await new Promise(resolve =>
+					setTimeout(resolve, 3000)
+				);
+			}
+		} catch (error) {
+			console.log(error.message);
+		} finally {
+			submitButton.isLoading = false
+		}
+    }, [email, name, inquiry, submitButton])
 
     return (
         <div className={containerClassName}>
