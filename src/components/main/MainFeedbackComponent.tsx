@@ -22,20 +22,25 @@ function MainFeedbackComponent({ className }: params) {
 
 	const onSubmit = useCallback(async e => {
 		e.preventDefault();
-		alert.value = undefined
+		alert.clearAlert()
 
 		try {
 			if (email && name && inquiry) {
 				submitButton.isLoading = true
 
 				const error = await emailService.sendEmailAsync()
+				if (error) {
+					alert.setDangerAlert(error.message)
+				} else {
+					alert.setSuccessAlert("Email has been sent!")
+				}
 			}
 		} catch (error) {
-			console.log(error.message);
+			alert.setDangerAlert(error.message)
 		} finally {
 			submitButton.isLoading = false
 		}
-	}, [email, name, inquiry, submitButton, emailService])
+	}, [email, name, inquiry, submitButton, alert, emailService])
 
 	return (
 		<div className={containerClassName}>

@@ -13,7 +13,7 @@ function SubmitButtonComponent({ btn }: params) {
 			.subscribe(x => setIsLoading(x))
 
 		return () => unSub.unsubscribe()
-	})
+	}, [btn])
 
 	return (
 		<button className={className} disabled={isLoading} type="submit">
