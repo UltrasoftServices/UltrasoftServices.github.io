@@ -7,7 +7,8 @@ import App from "./App"
 import "./index.css"
 import reportWebVitals from "./reportWebVitals"
 
-firebase.initializeApp(firebaseConfig)
+const app = firebase.initializeApp(firebaseConfig)
+export const cloudFunctions = app.functions("europe-west1")
 
 ReactDOM.render(
 	<React.StrictMode>
