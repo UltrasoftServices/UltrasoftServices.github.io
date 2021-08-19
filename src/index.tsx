@@ -1,9 +1,13 @@
-import React from "react"
-import ReactDOM from "react-dom"
-import "reflect-metadata"
-import App from "./App"
-import "./index.css"
-import reportWebVitals from "./reportWebVitals"
+import firebase from 'firebase/app';
+import React from "react";
+import ReactDOM from "react-dom";
+import "reflect-metadata";
+import { firebaseConfig } from "res/apiKey";
+import App from "./App";
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
+
+firebase.initializeApp(firebaseConfig)
 
 ReactDOM.render(
 	<React.StrictMode>
