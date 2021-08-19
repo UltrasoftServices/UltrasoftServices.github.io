@@ -30,7 +30,7 @@ function MainFeedbackComponent({ className }: params) {
 			if (email && name && inquiry) {
 				submitButton.isLoading = true
 
-				const error = await emailService.sendEmailAsync()
+				const error = await emailService.sendEmailAsync(email, name, inquiry)
 				if (error) {
 					alert.setDangerAlert(error.message)
 				} else {
