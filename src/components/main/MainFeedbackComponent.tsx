@@ -8,7 +8,7 @@ function MainFeedbackComponent({ className }: params) {
     const [inquiry, setInquiry] = useState("")
 
     let containerClassName = `container cs-container-min ${classes['cs-container']}`
-    const submitButton = new SubmitButton("Send inquiry!", "mt-4")
+    const submitButton = new SubmitButton("Send inquiry!", "Sending...", "mt-4")
 
     if (className) {
         containerClassName += ` ${className}`
