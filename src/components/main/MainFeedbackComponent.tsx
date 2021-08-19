@@ -34,7 +34,7 @@ function MainFeedbackComponent({ className }: params) {
 				if (error) {
 					alert.setDangerAlert(error.message)
 				} else {
-					alert.setSuccessAlert("Email has been sent!")
+					alert.setSuccessAlert("Form has been sent!")
 					isSuccessful = true
 				}
 			}
