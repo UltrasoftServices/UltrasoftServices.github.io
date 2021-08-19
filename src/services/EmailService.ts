@@ -1,4 +1,5 @@
 import firebase from 'firebase/app'
+import 'firebase/functions'
 import { singleton } from "tsyringe"
 
 @singleton()
