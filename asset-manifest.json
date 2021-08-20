@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.a0c6d0f9.chunk.css",
+    "main.css": "/static/css/main.465dc218.chunk.css",
     "main.js": "/static/js/main.ea52a108.chunk.js",
     "main.js.map": "/static/js/main.ea52a108.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.00e32dda.js",
@@ -10,7 +10,7 @@
     "static/js/3.798af63d.chunk.js": "/static/js/3.798af63d.chunk.js",
     "static/js/3.798af63d.chunk.js.map": "/static/js/3.798af63d.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.a0c6d0f9.chunk.css.map": "/static/css/main.a0c6d0f9.chunk.css.map",
+    "static/css/main.465dc218.chunk.css.map": "/static/css/main.465dc218.chunk.css.map",
     "static/js/2.d19d2aa2.chunk.js.LICENSE.txt": "/static/js/2.d19d2aa2.chunk.js.LICENSE.txt",
     "static/media/24-7-support.935e69de.jpg": "/static/media/24-7-support.935e69de.jpg",
     "static/media/arabiantales.jpg": "/static/media/arabiantales.45d3a137.jpg",
@@ -83,7 +83,7 @@
   "entrypoints": [
     "static/js/runtime-main.00e32dda.js",
     "static/js/2.d19d2aa2.chunk.js",
-    "static/css/main.a0c6d0f9.chunk.css",
+    "static/css/main.465dc218.chunk.css",
     "static/js/main.ea52a108.chunk.js"
   ]
 }
