@@ -37,16 +37,11 @@
 
 .favico {
   height: 30px !important;
-  margin-left: 1.25em;
-  margin-right: 1.5em;
+  margin-left: 0.75em !important;
 }
 
 .navbar {
   height: 60px !important;
-}
-
-.nav-item {
-  margin: 0 0.5em;
 }
 
 .cs-container-block {
@@ -66,10 +61,21 @@ h1 {
   }
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 575px) {
   h1 {
     font-size: 3em;
   }
+}
+
+@media only screen and (min-width: 576px) {
+	.nav-item {
+		margin: 0 0.5em;
+	}
+
+	.favico {
+		margin-left: 1.25em !important;
+		margin-right: 1.5em;
+	  }
 }
 
 @media only screen and (min-width: 992px) {

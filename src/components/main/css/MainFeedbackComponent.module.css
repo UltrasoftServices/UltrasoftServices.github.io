@@ -6,3 +6,15 @@
 .cs-container h1 {
     font-size: 2.75em;
 }
+
+@media only screen and (max-width: 575px) {
+	.cs-container h1 {
+		font-size: 1.4em !important;
+	}
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+	.cs-container h1 {
+		font-size: 2.14em !important;
+	}
+}
