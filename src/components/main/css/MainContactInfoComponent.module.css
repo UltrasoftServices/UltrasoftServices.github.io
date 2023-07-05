@@ -1,12 +1,15 @@
 .cs-container {
     min-height: 20em;
-    background-color: #292929;
+    background-color: #414141;
     color: white;
 }
 
 .cs-container .map-container {
     height: 50em;
     width: 100%;
+	display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cs-container .contact-container {
