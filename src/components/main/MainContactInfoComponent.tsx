@@ -1,6 +1,4 @@
-import GoogleMapReact from 'google-map-react'
-import { Fragment, useEffect } from "react"
-import { mapsApiKey } from "res/apiKey"
+import { useEffect } from "react"
 import classes from "./css/MainContactInfoComponent.module.css"
 
 function MainContactInfoComponent() {
@@ -44,15 +42,3 @@ function MainContactInfoComponent() {
 }
 
 export default MainContactInfoComponent
-
-type mapPinProps = {
-    lat: number,
-    lng: number
-}
-
-const MapPin = (_: mapPinProps) => (
-    <Fragment>
-        <div className={classes["pin"]} />
-        <div className={classes["pulse"]} />
-    </Fragment>
-);

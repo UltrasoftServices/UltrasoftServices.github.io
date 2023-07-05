@@ -1,5 +1,7 @@
 import GamesItemComponent from "components/games/GamesItemComponent"
+import MainContactInfoComponent from "components/main/MainContactInfoComponent";
 import gameModel, { gameType } from "models/gameModel"
+import { Fragment } from "react";
 
 const games: gameModel[] = [
     { name: "Leprechaun's Coins", imgSrc: "leprechauns", gameType: gameType.slot, hasLink: false },
@@ -63,15 +65,18 @@ const games: gameModel[] = [
 
 function GamesPage() {
     return (
-        <div className="container">
-            <h3>Slot Games</h3>
-            <hr />
-            <div className="row">
-                {
-                    games.map((x, i) => <GamesItemComponent key={i} item={x}></GamesItemComponent>)
-                }
-            </div>
-        </div>
+		<Fragment>
+			<div className="container">
+				<h3>Slot Games</h3>
+				<hr />
+				<div className="row">
+					{
+						games.map((x, i) => <GamesItemComponent key={i} item={x}></GamesItemComponent>)
+					}
+				</div>
+			</div>
+			<MainContactInfoComponent />
+		</Fragment>
     )
 }
 
