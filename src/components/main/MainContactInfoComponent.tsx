@@ -6,10 +6,6 @@ function MainContactInfoComponent() {
     let contactClassName = `${classes["contact-container"]} col-12 col-sm-6 d-flex py-5`
     const mapClassName = classes['map-container']
 
-	useEffect(() => {
-        (window as any).apg_05035e5d_8512_4ef2_90fd_dcbf737b03ce.init();
-    }, []);
-
     return (
         <div className={containerClassName}>
             <div className={contactClassName}>
