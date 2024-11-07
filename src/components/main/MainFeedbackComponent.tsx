@@ -38,7 +38,7 @@ function MainFeedbackComponent({ className }: params) {
 					isSuccessful = true
 				}
 			}
-		} catch (error) {
+		} catch (error: any) {
 			alert.setDangerAlert(error.message)
 		} finally {
 			submitButton.isLoading = false
